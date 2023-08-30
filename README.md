@@ -159,7 +159,7 @@
 * anchor : 이동 태그
 	* `"#"` 임시링크 기호
 	* `href="#title"` 을 값으로 작성하면 동일한 이름을 가진 id 속성이 있는 태그 위치로 이동
-	* ex) `<a href="#title1">초판 바로가기</a>`
+		* ex) `<a href="#title1">초판 바로가기</a>`
 	* 페이지 상단으로 이동하고자 할때
 		* `<a href="#top">맨위로 #top</a>`
 		* `<a href="#">맨위로 #</a></p>`
@@ -168,4 +168,6 @@
 * `<a href="./1_건너띄기링크.html">메인으로 돌아가기</a>` ->메인 페이지 상단 이동
 * `<a href="./1_건너띄기링크.html#title5">메인의 제5판 바로가기</a>` ->문단으로 바로 이동
 
-#### 3. 이미지 image ####
+#### 3. ﻿새창으로 열기 ####
+* ﻿a태그 뒤에 `target="_blank"` 추가
+* `<a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/a" target="_blank">MDN 바로가기</a>`
