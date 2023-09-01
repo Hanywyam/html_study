@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>테이블 연습1</title>
+</head>
+<body>
+  <h1>테이블 연습1</h1>
+  <p>2023년 식비</p>
+  
+  <table border="1">
+    <thead>
+    <tr> <!-- 1행 -->
+      <th>월</th>
+      <th>일</th>
+      <th>금액</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr> <!-- 2행 -->
+      <th rowspan="2">3월</th>
+      <td>1일</td>
+      <td>1000</td>
+    </tr>
+    <tr> <!-- 3행 -->
+      <td>2일</td>
+      <td>2000</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr> <!-- 4행 -->
+      <th colspan="2">합계</th>
+      <td>3000</td>
+    </tr>
+  </tfoot>
+  </table>
+</body>
+</html>

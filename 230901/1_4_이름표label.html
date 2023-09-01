@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>이름표 label</title>
+</head>
+<body>
+  <h1>이름표 label</h1>
+  <ul>
+    <li>인라인 요소</li>
+    <li>폼과 관련된 요소에 이름표로 저장</li>
+    <li>label 요소를 정의함으로서 폼 요소와 연관 시킬 수 있음.</li>
+    <li>키보드를 통해 컨트롤이 가능하며 접근성 향상</li>
+    <li>&lt;input id="one"&gt;의 하나의 아이디 값과 &it;label for="one"&gt;의 for 값이 동일해야 연결 됨</li>
+  </ul>
+ 
+  <form>
+    <h2>연결 방법1</h2>
+    <fieldset>
+      <label>이름: <input type="text" name="userName" id="user_name"></label>
+    </fieldset>
+    
+    <h2>연결 방법2</h2>
+    <table border="1">
+      <tr>
+        <td>
+          <input type="radio" name="fruit" id="strawberry" value="딸기">
+        </td>
+        <th>
+          <label for="strawberry">딸기</label>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <input type="radio" name="fruit" id="tomato" value="토마토">
+        </td>
+        <th>
+          <label for="tomato">토마토</label>
+        </th>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

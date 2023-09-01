@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>다양한 폼 관련 태그들</title>
+</head>
+<body>
+  <h1>다양한 폼 관련 태그들</h1>
+  <h2>input 태그</h2>
+  <strong>인라인 요소로 폼 안의 기본적인 필드 값을 만들 때 사용. 빈 요소</strong>
+  <form>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+    input은 type 속성 값에 따라 역할이 달라짐.
+    name="데이터 이름"
+    maxlength="value의 최대 수(문자수)"
+    minlength="value의 최소 수(문자수)"
+    placeholder="컨트롤 박스 안의 힌트"
+    required="필수항목. 단, form 태그가 반드시 정의되어 있어야 함"
+    value="입력값, 출력값, 전송값"
+    autofocus="자동 포커스"
+    checked="체크박스 자동 선택"
+    selected="select 옵션 자동 선택"
+    disabled="비활성화"
+    -->
+  
+    <section>
+      <h3>type="text" / type="password"</h3>
+      사용자명 : <input type="text" name="userName" id="user_name" maxlength="10" placeholder="이름을 입력하세요" autofocus><br>
+      <!-- autofocus 자동으로 커서 생성 -->
+      비밀번호 : <input type="password" name="userPW" id="user_pw" minlength="6" maxlength="15" placeholder="비밀번호를 입력하세요" required><br>
+      <!-- required 반드시 지켜야(작성해야) 하는 것. 안쓰면 안넘어감 -->
+  
+      <input type="submit" name="submit" value="확인">
+      <input type="reset" value="취소">
+      <input type="button" value="버튼">
+    </section>
+    <hr>
+  
+    <section>
+      <h3>여러 줄의 텍스트 박스</h3>
+      <textarea name="textBox" id="textBox" cols="30" rows="10">인라인. 이 안에 글 작성 시 박스 안에서 입력값 출력</textarea>
+    </section>
+    <hr>
+  
+    <section>
+      <h3>라디오 버튼</h3>
+       <p>하나의 값만 선택 가능. <strong>name 속성은 반드시 같아야 한다.</strong></p>
+       <input type="radio" name="choice" value="선택1">선택 1
+       <input type="radio" name="choice" value="선택2">선택 2
+       <input type="radio" name="choice" value="선택3">선택 3
+      <input type="radio" name="choice" value="선택4" checked>선택 4
+     </section>
+     <hr>
+  
+     <section>
+       <h3>체크박스 버튼</h3>
+       <p>여러 개의 값 선택 가능. <strong>name 속성은 반드시 같아야 한다.</strong></p>
+       <input type="checkbox" name="decide" value="선택1" checked>선택 1
+       <input type="checkbox" name="decide" value="선택2">선택 2
+       <input type="checkbox" name="decide" value="선택3">선택 3
+      <input type="checkbox" name="decide" value="선택4">선택 4
+    </section>
+    <hr>
+  
+    <section>
+      <h3>드롭다운 형태의 메뉴</h3>
+      <select name="menu" id="menu">
+        <!-- 반드시 하나의 option은 있어야 함 -->
+        <option value="">이 곳에서 선택해 주세요</option>
+        <!-- label 옵션 그룹 이름. 필수 값 -->
+        <optgroup label="그룹1">
+          <!-- selected 선택한 옵션이 화면에 먼저 보임. 없으면 첫줄 내용이 보임. -->
+          <option value="선택1" selected>선택2</option>
+          <option value="선택2">선택3</option>
+        </optgroup>
+        <optgroup label="그룹2">
+          <option value="선택4">선택4</option>
+          <option value="선택5">선택5</option>
+        </optgroup>
+      </select>
+    </section>
+    <hr>
+  
+    <section>
+      <h3></h3>
+      <input type="file" name="userFile"><br>
+      <input type="file" name="file" accept=".jpg, .png, .pdf"><br>
+      <!-- 
+        <input type="파일의 특징" name="파일이름">
+        accept="특정 확장자만 첨부하고자 할때 사용" 
+      -->
+      <button type="submit">전송</button>
+      <button type="reset">취소</button>
+      <!-- 
+        최근 생긴 태그로 많이 사용되고 있음. 
+        반드시 명령어를 작성해야 함 
+      -->
+    </section>
+    <hr>
+
+    <section>
+      <h3>날짜</h3>
+      <input type="date" name="yymmdd">
+    </section>
+    <hr>
+
+    <section>
+      <h3>이메일</h3>
+      <input type="email" name="userEmail">
+    </section>
+    <hr>
+
+    <section>
+      <h3>url</h3>
+      <input type="url" name="userURL">
+    </section>
+    <hr>
+    <hr>
+
+    <section>
+      <h3>검색</h3>
+      <input type="search" name="userSearch">
+    </section>
+    <hr>
+
+    <section>
+      <h3>범위 설정</h3>
+      <input type="range" name="userRange">
+    </section>
+    <hr>
+
+    <section>
+      <h3>숫자</h3>
+      <input type="number" name="userNumber">
+    </section>
+    <section>
+      <h3>숫자(readonly)</h3>
+      <input type="number" name="userNumber" readonly>
+      <!-- readonly 사용자가 읽을 수만 있음. 수정이나 선택이 안됨. -->
+    </section>
+    <hr>
+
+    <section>
+      <h3>전화</h3>
+      <input type="tel" name="userTel">
+    </section>
+    <hr>
+
+    <section>
+      <h3>사용 불가(비활성화)</h3>
+      <!-- 입력도 클릭도 아무 것도 할 수 없음..ㅋㅋ -->
+      <input type="url" disabled>
+    </section>
+  </form>
+</body>
+</html>
