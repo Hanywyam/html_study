@@ -295,7 +295,7 @@
 	* reset 취소
 	* button 버튼
 	* value 내가 표시하고 싶은 값(이름) 작성한 내용으로 표현
-* ﻿MDN참조: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input﻿
+> ﻿MDN참조: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input﻿
 
 * **﻿폼 그룹화 fieldset**﻿
 * 같은 주제를 가지고 있는 폼 관련 요소를 그룹으로 묶어 구분지을 때 사용
@@ -343,13 +343,13 @@
 * meta: 문서 레벨 메타데이터 요소
 * 표준 메타데이터 이름
 * meta는 head 영역에 들어간다.
-* 참고 site: https://developer.mozilla.org/ko/docs/Web/HTML/Element/meta
+> 참고 site: https://developer.mozilla.org/ko/docs/Web/HTML/Element/meta
 
 #### 4.오픈 그래프(Open Graph) 태그 ####
 * 인터넷 프로토콜의 한 종류로서 2010년에 페이스북이 발표했다.
 * 링크 공유시 이미지와 간략한 내용으로 미리보기가 가능하여 많이 사용되고 있다.
 * 썸네일을 포함한 웹페이지 미리보기가 제공되기 때문에 대략적으로 이 페이지가 어떤 내용을 다루고 있는지 사용자가 쉽게 확인할 수 있고 이는 실제 페이지 이동까지 이어지기 쉽다.
-* 참고 사이트 https://velog.io/@sweetpumpkin/Open-Graph-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0
+> 참고 사이트 https://velog.io/@sweetpumpkin/Open-Graph-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0
 
 
 ﻿
