@@ -297,15 +297,11 @@
 	* `value` 내가 표시하고 싶은 값(이름) 작성한 내용으로 표현
 > ﻿MDN참조: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input﻿
 
-* **﻿폼 그룹화 `fieldset`**﻿
+* **폼 그룹화 `fieldset`**﻿
 * 같은 주제를 가지고 있는 폼 관련 요소를 그룹으로 묶어 구분지을 때 사용
 	* `legend` : `fieldset` 요소의 제목 역할
 	* `fieldset` 요소 안에 작성되어야 하며, 하나의 `fieldset` 안에 한번만 사용할 수 있다.
 
-` <fieldset> <!-- 폼 그룹화 태그-->
-	 <legend>제목역할</legend>
-	 </legend>
- </fieldset>`
 ﻿
 * **이름표 label**
 * 인라인 요소
