@@ -128,7 +128,7 @@
 * 코드 파일에서 자세히 확인하기.
 
 #### 2. 앵커 anchor ####
-* href 속성을 이용하여 하이퍼 텍스트 설정
+* `href` 속성을 이용하여 하이퍼 텍스트 설정
 * 인라인 요소로 `<p>`태그를 이용하여 블럭설정하여 스타일을 주기도 한다.
 * 임시 링크 기호 `#` 는 특별하게 주소를 작성 못하는 경우`""`는 빈칸으로 둘 수 없으며. 반드시 `#`를 이용하여 채운다. `#`는 `a태그`에서만 사용이 가능하다.
 
@@ -273,39 +273,44 @@
 	* `method="get"` : 간단한 데이터 전송 시 사용. 데이터가 주소 입력란에 표시되므로 보안 유지 안됨.
 	* `method="post"` : http 헤더에 숨겨져 서버로 전송. 일정 크기 이상의 데이터 전송 시 사용. 데이터가 주소 입력란에 표시되지 않아 보안 유지.
 	* `action="정보를 전송할 서버 주소"`
-	* get과 post의 차이는 주소창에 내용이 보여지는지, 보이지 않는지의 차이.
+	* `get`과 `post`의 차이는 주소창에 내용이 보여지는지, 보이지 않는지의 차이.
 
 ﻿
 * **input 태그**
 * 인라인 요소로 폼 안의 기본적인 필드 값을 만들 때 사용. 빈 요소
-* input은 type 속성 값에 따라 역할이 달라짐.
-	* name="데이터 이름"
-	* maxlength="value의 최대 수(문자수)" ->설정값 이상 쓸 수 없음
-	* minlength="value의 최소 수(문자수)" ->설정값 이하로 쓸 수 없음
-	* placeholder="컨트롤 박스 안의 힌트" ->사용자 행동을 유도할 수 있도록 사용.
-	* required="필수항목. 단, form 태그가 반드시 정의되어 있어야 함"
-	* value="입력값, 출력값, 전송값"
-	* autofocus="자동 포커스"
-	* checked="체크박스 자동 선택"
-	* selected="select 옵션 자동 선택"
-	* disabled="비활성화"
-	* autofocus 자동으로 커서 생성
-	* required 반드시 지켜야(작성해야) 하는 것. 안 쓰면 안넘어감.
-	* submit 전송
-	* reset 취소
-	* button 버튼
-	* value 내가 표시하고 싶은 값(이름) 작성한 내용으로 표현
+* `input`은 type 속성 값에 따라 역할이 달라짐.
+	* `name="데이터 이름"`
+	* `maxlength="value의 최대 수(문자수)"` ->설정값 이상 쓸 수 없음
+	* `minlength="value의 최소 수(문자수)"` ->설정값 이하로 쓸 수 없음
+	* `placeholder="컨트롤 박스 안의 힌트"` ->사용자 행동을 유도할 수 있도록 사용.
+	* `required="필수항목. 단, form 태그가 반드시 정의되어 있어야 함"
+	* `value="입력값, 출력값, 전송값"`
+	* `autofocus="자동 포커스"`
+	* `checked="체크박스 자동 선택"`
+	* `selected="select 옵션 자동 선택"`
+	* `disabled="비활성화"`
+	* `autofocus` 자동으로 커서 생성
+	* `required` 반드시 지켜야(작성해야) 하는 것. 안 쓰면 안넘어감.
+	* `submit` 전송
+	* `reset` 취소
+	* `button` 버튼
+	* `value` 내가 표시하고 싶은 값(이름) 작성한 내용으로 표현
 > ﻿MDN참조: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input﻿
 
-* **﻿폼 그룹화 fieldset**﻿
+* **﻿폼 그룹화 `fieldset`**﻿
 * 같은 주제를 가지고 있는 폼 관련 요소를 그룹으로 묶어 구분지을 때 사용
-	* legend : fieldset 요소의 제목 역할
-	* fieldset 요소 안에 작성되어야 하며, 하나의 fieldset 안에 한번만 사용할 수 있다.
+	* `legend` : `fieldset` 요소의 제목 역할
+	* `fieldset` 요소 안에 작성되어야 하며, 하나의 `fieldset` 안에 한번만 사용할 수 있다.
+
+` <fieldset> <!-- 폼 그룹화 태그-->
+	 <legend>제목역할</legend>
+	 </legend>
+ </fieldset>`
 ﻿
 * **이름표 label**
 * 인라인 요소
 * 폼과 관련된 요소에 이름표로 저장한다.
-* label 요소를 정의함으로서 폼 요소와 연관 시킬 수 있다.
+* `label` 요소를 정의함으로서 폼 요소와 연관 시킬 수 있다.
 * 이름표 안에는 같이 묶음으로 보기 때문에 함께 동기화 된다.(이전에 사용자 입력 영역만 선택이 가능했다면, label로 묶여있는 내용 부분을 눌러도 선택이 가능하다.)
 * 키보드를 통해 컨트롤이 가능하며 접근성이 향상된다. 
 * label 요소와 폼 요소를 따로 사용하는 방법도 가능하다.
@@ -320,13 +325,16 @@
 * 웹 브라우저에서 플러그인 도움없이 재생
 * 다양한 브라우저에서 재생될 수 있도록 하기 위해 source 태그를 사용
 * 모던 브라우저에서는 video 태그만 작성해도 동작
+* `<video src="./video/flicker.mp4" autoplay muted loop controls poster="./video/flicker.jpg"></video>`
 	* ​video 속성들:
-		* poster="대체 이미지. 영상을 불러오지 못하거나 불러오기 전에 보이는 이미지"
-		* autoplay 자동재생(!크롬의 경우 단독 사용 불가. 반드시 음소거가 되어 있어야 실행)
-		* muted 음소거
-		* loop 반복
-		* controls 컨트롤 바
-		* preload 재생 전 파일 미리 불러옴. autoplay와 함께 사용되는 경우 적용 안됨
+		* `poster="대체 이미지. 영상을 불러오지 못하거나 불러오기 전에 보이는 이미지"`
+		* `autoplay` 자동재생(!크롬의 경우 단독 사용 불가. 반드시 음소거가 되어 있어야 실행)
+		* `muted` 음소거
+		* `loop` 반복
+		* `controls` 컨트롤 바
+		* `preload` 재생 전 파일 미리 불러옴. `autoplay`와 함께 사용되는 경우 적용 안됨
+  * 오디오 태그는 요즘은 잘 사용하지 않는다.
+  * `<audio src="./video/flicker.mp3" autoplay loop></audio>`
 
 
 #### 2.favicon 연결 ####
@@ -340,9 +348,9 @@
 
 #### 3.meta 태그 ####
 * '~에 대해서'라는 의미를 가진 단어로 해당 html 문서가 어떤 내용을 담고 있으며, 문서의 키워드, 작성자 등으 알려주는 웹페이지의 요약
-* meta: 문서 레벨 메타데이터 요소
+* `meta`: 문서 레벨 메타데이터 요소
 * 표준 메타데이터 이름
-* meta는 head 영역에 들어간다.
+* meta는 `head` 영역에 들어간다.
 > 참고 site: https://developer.mozilla.org/ko/docs/Web/HTML/Element/meta
 
 #### 4.오픈 그래프(Open Graph) 태그 ####
